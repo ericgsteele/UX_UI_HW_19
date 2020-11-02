@@ -68,6 +68,10 @@ nav li {
   border-bottom: 1px solid #1e2022;
   margin: 10px;
 }
+.navactive{
+  border-bottom: #1e2022 solid 11px;
+  margin-bottom: 0;
+}
 /* START CONTACT CALL TO ACTION */
 #contactCTA {
   border: #1e2022 1px solid;
