@@ -1,0 +1,255 @@
+body {
+  background-color: #faf9f3;
+  color: #1e2022;
+  margin: 0;
+}
+p {
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: #1e2022;
+}
+h1 {
+  font-size: 50px;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h2 {
+  font-size: 24px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: #1e2022;
+}
+
+.inlineBlock {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Nav Bar Section */
+
+.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+.logo img {
+  max-width: 100%;
+  min-width: 265px;
+}
+
+/* Have to find a way to get this to align to the bottom of the nav bar! */
+nav {
+  width: 75%;
+  margin-left: auto;
+  /* border: blue solid 1px; */
+  margin-right: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+nav ul {
+  /* border: solid red 1px; */
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0 14px 0 auto;
+}
+nav li {
+  text-align: center;
+  width: 98px;
+  padding: 10px 0px 0px 0px; /* 3rd measurement is nearness to underline */
+  border-bottom: 1px solid #1e2022;
+  margin: 10px;
+}
+/* START CONTACT CALL TO ACTION */
+#contactCTA {
+  border: #1e2022 1px solid;
+  background-color: #faf9f3;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 14px 0px 0px;
+  top: 0;
+  border-radius: 50%;
+  font-size: 24px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  color: #1e2022;
+  transition: 300ms;
+}
+.hover{
+  background-color: #1e2022 !important;
+  color: #faf9f3 !important;
+}
+/* END CONTACT CALL TO ACTION */
+
+
+.navigation {
+  border-bottom: 1px solid #1e2022;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+.navigation a {
+  text-decoration: none;
+}
+/* Main Content */
+
+.content {
+  margin: 20px 24px;
+  /* border: red solid 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 600px;
+}
+.heroImage img {
+  max-width: 80%;
+  max-height: 80%;
+  border: solid 1px #1e2022;
+  border-radius: 50%; /*<-- OPTION - outline around picture. Decide later to keep or not */
+}
+.heroImage {
+  display: inline-block;
+  width: 40%;
+  min-width: 300px;
+  /* border: red solid 1px; */
+  margin: 1%;
+}
+.aboutDescription {
+  width: 40%;
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin: 1%;
+}
+.aboutDescription hr {
+  width: 50%;
+  margin-left: 0;
+}
+.locationHolder {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+  /* border: solid 1px red; */
+  text-align: right;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: 0;
+}
+.location p {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+/* Footer */
+/* need to find out how to get all of the text to align top */
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #1e2022;
+  color: #faf9f3;
+}
+footer p {
+  color: #faf9f3;
+}
+.footerChunk {
+  display: inline-block;
+  width: 40%;
+  margin: 1%;
+  /* vertical-align: text-top; This is not working*/
+  /* border: red solid 1px; */
+}
+.footerBit {
+  display: inline-block;
+  width: 10%;
+  margin: 1%;
+  vertical-align: top;
+  /* border: red solid 1px; */
+}
+footer a {
+  text-align: left;
+  text-decoration: none;
+  color: #faf9f3;
+}
+footer li {
+  list-style: none;
+}
+footer h2 {
+  text-align: left;
+  text-decoration: none;
+  color: #faf9f3;
+  text-decoration: underline;
+}
+
+/* Skills Page */
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  flex-direction: row;
+}
+.skill {
+  width: 30%;
+  border: #1e2022 solid 1px;
+  margin: 10px;
+  padding: 20px;
+}
+.skill img {
+  width: 120px;
+}
+.skillImage {
+  text-align: center;
+}
+.title {
+  margin: 20px 24px;
+}
+hr {
+  margin: 1px 24px;
+  width: 215px;
+}
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .skill {
+    width: 85%;
+  }
+}
+
+/* My Work */
+
+.myWork {
+  padding: 24px;
+}
+.workImage {
+  border: #1e2022 solid 1px;
+}
+.workImage img {
+  max-width: 100%;
+}
+.introText hr {
+  margin: 0;
+}
+.workGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 60px 20px;
+  grid-template-areas:
+    "csvImage csvText"
+    "phoImage phoText";
+}
